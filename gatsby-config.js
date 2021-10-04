@@ -5,6 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `dispatch`,
+    description: `dispatch starter - a static bulletin board for links, images, text, and embeds`,
+    author: `@extrawaterjo`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+  },
+  plugins: [`gatsby-plugin-react-helmet`],
 }
