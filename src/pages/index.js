@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
 
 const Styledh1 = styled.h1`
-  color: purple;
+  color: blue;
 `
 
 export default function Home() {
