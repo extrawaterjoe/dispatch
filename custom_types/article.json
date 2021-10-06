@@ -8,16 +8,97 @@
         "choices": {
           "bandcamp-link": {
             "type": "Slice",
-            "fieldset": "bandcamp-link",
-            "description": "bandcamp link",
-            "icon": "ac_unit",
+            "fieldset": "bandcamp_player_embed",
+            "description": "bandcamp_player_embed",
+            "icon": "music_video",
             "display": "list",
             "non-repeat": {
-              "bandcamp-iframe": {
+              "bandcamp_iframe_code": {
                 "type": "StructuredText",
                 "config": {
                   "single": "embed",
-                  "label": "bandcamp-iframe"
+                  "label": "bandcamp_iframe_code"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "youtube_video_embed": {
+            "type": "Slice",
+            "fieldset": "youtube_video_embed",
+            "description": "youtube_video_embed",
+            "icon": "ondemand_video",
+            "display": "list",
+            "non-repeat": {
+              "youtube_video_link": {
+                "type": "Embed",
+                "config": {
+                  "label": "youtube_video_link"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "soundcloud_player_embed": {
+            "type": "Slice",
+            "fieldset": "soundcloud_player_embed",
+            "description": "soundcloud_player_embed",
+            "icon": "music_note",
+            "display": "list",
+            "non-repeat": {
+              "soundcloud_track_url": {
+                "type": "Embed",
+                "config": {
+                  "label": "soundcloud_track_url"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "image",
+            "description": "image",
+            "icon": "camera_alt",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image"
+                }
+              },
+              "optional_caption": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "optional_caption"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "simple_text": {
+            "type": "Slice",
+            "fieldset": "simple_text",
+            "description": "simple_text",
+            "icon": "format_color_text",
+            "display": "list",
+            "non-repeat": {
+              "text_heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "text_heading"
+                }
+              },
+              "text_body": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "text_body"
                 }
               }
             },
