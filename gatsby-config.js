@@ -32,6 +32,7 @@ module.exports = {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         schemas: {
           home: require("./custom_types/home.json"),
+          article: require("./custom_types/article.json"),
         },
       },
     },

@@ -1,0 +1,30 @@
+{
+  "Main": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "bandcamp-link": {
+            "type": "Slice",
+            "fieldset": "bandcamp-link",
+            "description": "bandcamp link",
+            "icon": "ac_unit",
+            "display": "list",
+            "non-repeat": {
+              "bandcamp-iframe": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "embed",
+                  "label": "bandcamp-iframe"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}
