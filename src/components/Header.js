@@ -1,26 +1,12 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import { useHomeData } from "../hooks/useHomeData"
 
 export default function Header() {
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      prismicHome {
-        data {
-          body {
-            ... on PrismicHomeDataBodyBandcampLink {
-              primary {
-                url {
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+  const { bandcampURL, textPrimary } = useHomeData()
 
-  const bandcampURL = data.prismicHome.data.body[0].primary.url.url
-
-  return <pre>{bandcampURL}</pre>
+  const Styledh3 = styled.h3`
+    color: ${textPrimary};
+  `
+  return <Styledh3>{bandcampURL}</Styledh3>
 }
