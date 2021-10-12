@@ -5,7 +5,7 @@ import Header from "./Header"
 import PropTypes from "prop-types"
 
 const Layout = ({ children }) => {
-  const [theme, componentMounted] = useDarkMode()
+  const [theme, toggleTheme, componentMounted] = useDarkMode()
 
   React.useEffect(() => {
     document.body.dataset.theme = theme
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyles />
-      <Header />
+      <Header toggleTheme={toggleTheme} />
       <main>{children}</main>
     </React.Fragment>
   )

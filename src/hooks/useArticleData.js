@@ -16,19 +16,6 @@ export const useArticleData = () => {
                 }
                 slice_type
               }
-              ... on PrismicArticleDataBodyImage {
-                id
-                primary {
-                  image {
-                    url
-                    alt
-                  }
-                  optional_caption {
-                    text
-                  }
-                }
-                slice_type
-              }
               ... on PrismicArticleDataBodySimpleText {
                 id
                 primary {
@@ -41,17 +28,31 @@ export const useArticleData = () => {
                 }
                 slice_type
               }
+              ... on PrismicArticleDataBodyImage {
+                slice_type
+                id
+                primary {
+                  image {
+                    alt
+                    url
+                  }
+                  optional_caption {
+                    text
+                  }
+                }
+              }
             }
             document_display_name {
               text
             }
           }
+          uid
         }
       }
     }
   `)
 
-  const dataArray = data.allPrismicArticle.nodes
+  const dataNodes = data.allPrismicArticle.nodes
 
-  return { dataArray }
+  return { dataNodes }
 }

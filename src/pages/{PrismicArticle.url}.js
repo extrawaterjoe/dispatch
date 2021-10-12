@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import { Seo } from "../components/Seo"
+import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
 
 const ArticleTemplate = ({ data }) => {
@@ -11,7 +11,7 @@ const ArticleTemplate = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Seo title={doc.document_display_name.text} /> */}
+      <Seo title={doc.document_display_name.text} />
       <SliceZone sliceZone={doc.body} />
     </Layout>
   )

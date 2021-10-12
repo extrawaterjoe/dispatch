@@ -1,8 +1,15 @@
-import * as React from "react"
+import React from "react"
 import { useHomeData } from "../hooks/useHomeData"
 
-export default function Header() {
+const Header = ({ toggleTheme }) => {
   const { bandcampURL } = useHomeData()
 
-  return <h3>{bandcampURL}</h3>
+  return (
+    <>
+      <h3>{bandcampURL}</h3>
+      <button onClick={toggleTheme}>THEME</button>
+    </>
+  )
 }
+
+export default Header
