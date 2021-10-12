@@ -26,10 +26,10 @@ export const useHomeData = () => {
     }
   `)
 
-  const bandcampURL = data.prismicHome.data.body[1].primary.url.url
-  const backgroundColor = data.prismicHome.data.body[0].items[0].background
-  const textPrimary = data.prismicHome.data.body[0].items[0].text_primary
-  const textSecondary = data.prismicHome.data.body[0].items[0].text_secondary
+  const bandcampURL = data.prismicHome.data.body[0].primary.url.url
+  // const backgroundColor = data.prismicHome.data.body[0].items[0].background
+  // const textPrimary = data.prismicHome.data.body[0].items[0].text_primary
+  // const textSecondary = data.prismicHome.data.body[0].items[0].text_secondary
 
-  return { bandcampURL, backgroundColor, textPrimary, textSecondary }
+  return { bandcampURL }
 }

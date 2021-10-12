@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import "./css-vars.css"
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -9,6 +10,8 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     display: flex;
+    background-color: var(--background-color);
+    color: var(--text-primary);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0 100px;
   }

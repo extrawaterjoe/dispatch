@@ -4,7 +4,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": null,
+        "labels": {},
         "choices": {
           "bandcamp_link": {
             "type": "Slice",
@@ -47,34 +47,6 @@
               }
             },
             "repeat": {}
-          },
-          "site_color": {
-            "type": "Slice",
-            "fieldset": "site_color",
-            "description": "site color",
-            "icon": "color_lens",
-            "display": "list",
-            "non-repeat": {},
-            "repeat": {
-              "background": {
-                "type": "Color",
-                "config": {
-                  "label": "background"
-                }
-              },
-              "text_primary": {
-                "type": "Color",
-                "config": {
-                  "label": "text_primary"
-                }
-              },
-              "text_secondary": {
-                "type": "Color",
-                "config": {
-                  "label": "text_secondary"
-                }
-              }
-            }
           }
         }
       }
