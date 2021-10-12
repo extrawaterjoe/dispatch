@@ -1,28 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-export default function Image({ slice }) {
+const Image = ({ slice }) => {
+  console.log(slice)
   return (
     <section>
-      <img
-        src={slice.primary.full_width_image.url}
-        alt={slice.primary.full_width_image.alt}
-      />
+      <img src={slice.primary.image.url} alt={slice.primary.image.alt} />
     </section>
   )
 }
 
+export default Image
+
 export const query = graphql`
-  fragment PageDataBodyFullWidthImage on PrismicPageDataBodyFullWidthImage {
+  fragment ArticleDataBodyImage on PrismicArticleDataBodyImage {
     primary {
-      full_width_image {
-        url
-      }
-    }
-  }
-  fragment HomepageDataBodyFullWidthImage on PrismicHomepageDataBodyFullWidthImage {
-    primary {
-      full_width_image {
+      image {
+        alt
         url
       }
     }

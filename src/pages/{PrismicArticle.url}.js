@@ -30,13 +30,15 @@ export const query = graphql`
           ... on PrismicSliceType {
             slice_type
           }
-          ... on PrismicArticleDataBodyBandcampLink {
-            id
-            slice_type
-          }
           ... on PrismicArticleDataBodyImage {
             id
             slice_type
+            primary {
+              image {
+                alt
+                url
+              }
+            }
           }
           ... on PrismicArticleDataBodySimpleText {
             id
@@ -49,6 +51,15 @@ export const query = graphql`
           ... on PrismicArticleDataBodyYoutubeVideoEmbed {
             id
             slice_type
+          }
+          ... on PrismicArticleDataBodyBandcampPlayerEmbed {
+            id
+            slice_type
+            primary {
+              bandcamp_iframe_code {
+                text
+              }
+            }
           }
         }
       }

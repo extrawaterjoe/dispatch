@@ -19,23 +19,6 @@
       "config": {
         "labels": null,
         "choices": {
-          "bandcamp-link": {
-            "type": "Slice",
-            "fieldset": "bandcamp_player_embed",
-            "description": "bandcamp_player_embed",
-            "icon": "music_video",
-            "display": "list",
-            "non-repeat": {
-              "bandcamp_iframe_code": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "embed",
-                  "label": "bandcamp_iframe_code"
-                }
-              }
-            },
-            "repeat": {}
-          },
           "youtube_video_embed": {
             "type": "Slice",
             "fieldset": "youtube_video_embed",
@@ -112,6 +95,23 @@
                 "config": {
                   "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                   "label": "text_body"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "bandcamp_player_embed": {
+            "type": "Slice",
+            "fieldset": "bandcamp_player_embed",
+            "description": "bandcamp_player_embed",
+            "icon": "queue_music",
+            "display": "list",
+            "non-repeat": {
+              "bandcamp_iframe_code": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "bandcamp_iframe_code"
                 }
               }
             },
