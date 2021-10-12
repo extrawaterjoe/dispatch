@@ -30,6 +30,7 @@ module.exports = {
       resolve: "gatsby-source-prismic",
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
         schemas: {
           home: require("./custom_types/home.json"),
           article: require("./custom_types/article.json"),
