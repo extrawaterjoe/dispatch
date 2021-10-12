@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 const Image = ({ slice }) => {
-  console.log(slice)
   return (
     <section>
       <img src={slice.primary.image.url} alt={slice.primary.image.alt} />

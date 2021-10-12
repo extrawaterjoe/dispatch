@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const useHomeData = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query HomeQuery {
       prismicHome {
         data {
           body {

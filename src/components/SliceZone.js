@@ -1,6 +1,6 @@
 // SliceZone.js file
 
-import * as React from "react"
+import React from "react"
 
 import Image from "../slices/Image"
 import BandcampPlayerEmbed from "../slices/BandcampPlayerEmbed"
@@ -19,7 +19,7 @@ const SliceZone = ({ sliceZone }) => {
     return null
   })
 
-  return <main className="container">{sliceZoneContent}</main>
+  return <React.Fragment>{sliceZoneContent}</React.Fragment>
 }
 
 export default SliceZone
