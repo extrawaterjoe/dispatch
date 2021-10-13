@@ -1,14 +1,11 @@
-// SliceZone.js file
-
 import React from "react"
-
 import Image from "../slices/Image"
-import BandcampPlayerEmbed from "../slices/BandcampPlayerEmbed"
+import IframeEmbedCode from "../slices/IframeEmbedCode"
 
 const SliceZone = ({ sliceZone }) => {
   const sliceComponents = {
     image: Image,
-    bandcamp_player_embed: BandcampPlayerEmbed,
+    iframe_embed_code: IframeEmbedCode,
   }
 
   const sliceZoneContent = sliceZone.map((slice, index) => {

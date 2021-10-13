@@ -17,40 +17,8 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": null,
+        "labels": {},
         "choices": {
-          "youtube_video_embed": {
-            "type": "Slice",
-            "fieldset": "youtube_video_embed",
-            "description": "youtube_video_embed",
-            "icon": "ondemand_video",
-            "display": "list",
-            "non-repeat": {
-              "youtube_video_link": {
-                "type": "Embed",
-                "config": {
-                  "label": "youtube_video_link"
-                }
-              }
-            },
-            "repeat": {}
-          },
-          "soundcloud_player_embed": {
-            "type": "Slice",
-            "fieldset": "soundcloud_player_embed",
-            "description": "soundcloud_player_embed",
-            "icon": "music_note",
-            "display": "list",
-            "non-repeat": {
-              "soundcloud_track_url": {
-                "type": "Embed",
-                "config": {
-                  "label": "soundcloud_track_url"
-                }
-              }
-            },
-            "repeat": {}
-          },
           "image": {
             "type": "Slice",
             "fieldset": "image",
@@ -100,18 +68,18 @@
             },
             "repeat": {}
           },
-          "bandcamp_player_embed": {
+          "iframe_embed_code": {
             "type": "Slice",
-            "fieldset": "bandcamp_player_embed",
-            "description": "bandcamp_player_embed",
-            "icon": "queue_music",
+            "fieldset": "iframe_embed_code",
+            "description": "iframe_embed_code",
+            "icon": "aspect_ratio",
             "display": "list",
             "non-repeat": {
-              "bandcamp_iframe_code": {
+              "embed_code": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph",
-                  "label": "bandcamp_iframe_code"
+                  "multi": "embed",
+                  "label": "embed_code"
                 }
               }
             },

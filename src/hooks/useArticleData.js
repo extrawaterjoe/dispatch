@@ -2,35 +2,23 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const useArticleData = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query myQuery {
       allPrismicArticle {
         nodes {
           data {
             body {
-              ... on PrismicArticleDataBodyBandcampPlayerEmbed {
+              ... on PrismicArticleDataBodyIframeEmbedCode {
                 id
+                slice_type
                 primary {
-                  bandcamp_iframe_code {
+                  embed_code {
                     text
                   }
                 }
-                slice_type
-              }
-              ... on PrismicArticleDataBodySimpleText {
-                id
-                primary {
-                  text_body {
-                    text
-                  }
-                  text_heading {
-                    text
-                  }
-                }
-                slice_type
               }
               ... on PrismicArticleDataBodyImage {
-                slice_type
                 id
+                slice_type
                 primary {
                   image {
                     alt
@@ -41,12 +29,23 @@ export const useArticleData = () => {
                   }
                 }
               }
+              ... on PrismicArticleDataBodySimpleText {
+                id
+                slice_type
+                primary {
+                  text_body {
+                    text
+                  }
+                  text_heading {
+                    text
+                  }
+                }
+              }
             }
             document_display_name {
               text
             }
           }
-          uid
         }
       }
     }

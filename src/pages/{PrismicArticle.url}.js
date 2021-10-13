@@ -8,6 +8,7 @@ import SliceZone from "../components/SliceZone"
 const ArticleTemplate = ({ data }) => {
   if (!data) return console.log("no data...")
   const doc = data.prismicArticle.data
+  console.log("doc", doc)
 
   return (
     <Layout>
@@ -23,12 +24,15 @@ export const query = graphql`
   query ArticleQuery($id: String) {
     prismicArticle(id: { eq: $id }) {
       data {
-        document_display_name {
-          text
-        }
         body {
-          ... on PrismicSliceType {
+          ... on PrismicArticleDataBodyIframeEmbedCode {
+            id
             slice_type
+            primary {
+              embed_code {
+                text
+              }
+            }
           }
           ... on PrismicArticleDataBodyImage {
             id
@@ -38,29 +42,26 @@ export const query = graphql`
                 alt
                 url
               }
+              optional_caption {
+                text
+              }
             }
           }
           ... on PrismicArticleDataBodySimpleText {
             id
             slice_type
-          }
-          ... on PrismicArticleDataBodySoundcloudPlayerEmbed {
-            id
-            slice_type
-          }
-          ... on PrismicArticleDataBodyYoutubeVideoEmbed {
-            id
-            slice_type
-          }
-          ... on PrismicArticleDataBodyBandcampPlayerEmbed {
-            id
-            slice_type
             primary {
-              bandcamp_iframe_code {
+              text_body {
+                text
+              }
+              text_heading {
                 text
               }
             }
           }
+        }
+        document_display_name {
+          text
         }
       }
     }
