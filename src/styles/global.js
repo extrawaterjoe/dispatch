@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     display: flex;
+    justify-content: center;
     background-color: var(--background-color);
     color: var(--text-primary);
     font-family: Roboto, Helvetica, Arial, sans-serif;

@@ -1,8 +1,13 @@
-import * as React from "react"
+import React from "react"
+import styled from "styled-components"
 import { useDarkMode } from "../hooks/useDarkMode"
 import { GlobalStyles } from "../styles/Global"
 import Header from "./Header"
 import PropTypes from "prop-types"
+
+const MainContainer = styled.main`
+  max-width: 720px;
+`
 
 const Layout = ({ children }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode()
@@ -19,7 +24,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
-      <main>{children}</main>
+      <MainContainer>{children}</MainContainer>
     </React.Fragment>
   )
 }

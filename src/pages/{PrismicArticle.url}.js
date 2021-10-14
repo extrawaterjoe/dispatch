@@ -1,19 +1,22 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
-
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
 
+const StyledArticle = styled.article``
+
 const ArticleTemplate = ({ data }) => {
-  if (!data) return console.log("no data...")
+  if (!data) return
   const doc = data.prismicArticle.data
-  console.log("doc", doc)
 
   return (
     <Layout>
       <Seo title={doc.document_display_name.text} />
-      <SliceZone sliceZone={doc.body} />
+      <StyledArticle>
+        <SliceZone sliceZone={doc.body} />
+      </StyledArticle>
     </Layout>
   )
 }

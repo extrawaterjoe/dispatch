@@ -1,11 +1,13 @@
 import React from "react"
 import Image from "../slices/Image"
 import IframeEmbedCode from "../slices/IframeEmbedCode"
+import SimpleText from "../slices/SimpleText"
 
 const SliceZone = ({ sliceZone }) => {
   const sliceComponents = {
     image: Image,
     iframe_embed_code: IframeEmbedCode,
+    simple_text: SimpleText,
   }
 
   const sliceZoneContent = sliceZone.map((slice, index) => {

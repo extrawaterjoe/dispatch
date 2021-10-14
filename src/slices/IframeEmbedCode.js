@@ -1,9 +1,17 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
+
+const StylediFrameContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 10px 0;
+`
 
 const IframeEmbedCode = ({ slice }) => {
   return (
-    <div
+    <StylediFrameContainer
       dangerouslySetInnerHTML={{
         __html: slice.primary.embed_code.text,
       }}
