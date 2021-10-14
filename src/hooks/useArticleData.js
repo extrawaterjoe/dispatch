@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 export const useArticleData = () => {
   const data = useStaticQuery(graphql`
     query myQuery {
-      allPrismicArticle {
+      allPrismicArticle(sort: { fields: first_publication_date, order: DESC }) {
         nodes {
           data {
             body {
