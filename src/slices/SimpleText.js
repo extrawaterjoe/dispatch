@@ -2,7 +2,6 @@ import React from "react"
 // import { graphql } from "gatsby"
 
 const SimpleText = ({ slice }) => {
-  console.log(slice)
   return (
     <>
       <div>{slice.primary.text_heading.text}</div>

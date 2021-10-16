@@ -6,23 +6,6 @@
       "config": {
         "labels": null,
         "choices": {
-          "bandcamp_link": {
-            "type": "Slice",
-            "fieldset": "bandcamp_link",
-            "description": "bandcamp_link",
-            "icon": "insert_link",
-            "display": "list",
-            "non-repeat": {
-              "url": {
-                "type": "Link",
-                "config": {
-                  "label": "url",
-                  "select": null
-                }
-              }
-            },
-            "repeat": {}
-          },
           "home_info": {
             "type": "Slice",
             "fieldset": "home_info",
@@ -48,17 +31,18 @@
             },
             "repeat": {}
           },
-          "twitter_link": {
+          "custom_link": {
             "type": "Slice",
-            "fieldset": "twitter_link",
-            "description": "twitter_link",
-            "icon": "message",
+            "fieldset": "custom_link",
+            "description": "custom_link",
+            "icon": "insert_link",
             "display": "list",
             "non-repeat": {
               "url": {
                 "type": "Link",
                 "config": {
-                  "label": "url"
+                  "label": "url",
+                  "select": null
                 }
               }
             },

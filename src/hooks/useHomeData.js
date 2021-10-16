@@ -6,23 +6,6 @@ export const useHomeData = () => {
       prismicHome {
         data {
           body {
-            ... on PrismicHomeDataBodyBandcampLink {
-              primary {
-                url {
-                  url
-                }
-              }
-              slice_type
-            }
-            ... on PrismicHomeDataBodyTwitterLink {
-              id
-              primary {
-                url {
-                  url
-                }
-              }
-              slice_type
-            }
             ... on PrismicHomeDataBodyHomeInfo {
               id
               primary {
@@ -36,15 +19,20 @@ export const useHomeData = () => {
               }
               slice_type
             }
+            ... on PrismicHomeDataBodyCustomLink {
+              id
+              slice_type
+              primary {
+                url {
+                  url
+                }
+              }
+            }
           }
         }
       }
     }
   `)
 
-  console.log(data)
-
-  const bandcampURL = data.prismicHome.data.body[0].primary.url.url
-
-  return { bandcampURL }
+  return { data }
 }
