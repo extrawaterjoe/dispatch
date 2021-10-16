@@ -4,7 +4,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": {},
+        "labels": null,
         "choices": {
           "bandcamp_link": {
             "type": "Slice",
@@ -43,6 +43,22 @@
                 "config": {
                   "single": "heading1",
                   "label": "home_name"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "twitter_link": {
+            "type": "Slice",
+            "fieldset": "twitter_link",
+            "description": "twitter_link",
+            "icon": "message",
+            "display": "list",
+            "non-repeat": {
+              "url": {
+                "type": "Link",
+                "config": {
+                  "label": "url"
                 }
               }
             },

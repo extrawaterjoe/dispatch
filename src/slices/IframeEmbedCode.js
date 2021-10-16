@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 const StylediFrameContainer = styled.div`
   display: flex;
@@ -21,12 +21,14 @@ const IframeEmbedCode = ({ slice }) => {
 
 export default IframeEmbedCode
 
-export const query = graphql`
-  fragment ArticleDataBodyIframeEmbedCode on PrismicArticleDataBodyIframeEmbedCode {
-    primary {
-      embed_code {
-        text
-      }
-    }
-  }
-`
+// simplify query in useArticleData to use fragments in slice components
+
+// export const query = graphql`
+//   fragment ArticleDataBodyIframeEmbedCode on PrismicArticleDataBodyIframeEmbedCode {
+//     primary {
+//       embed_code {
+//         text
+//       }
+//     }
+//   }
+// `

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 const Image = ({ slice }) => {
   return (
@@ -11,13 +11,15 @@ const Image = ({ slice }) => {
 
 export default Image
 
-export const query = graphql`
-  fragment ArticleDataBodyImage on PrismicArticleDataBodyImage {
-    primary {
-      image {
-        alt
-        url
-      }
-    }
-  }
-`
+// simplify query in useArticleData to use fragments in slice components
+
+// export const query = graphql`
+//   fragment ArticleDataBodyImage on PrismicArticleDataBodyImage {
+//     primary {
+//       image {
+//         alt
+//         url
+//       }
+//     }
+//   }
+// `

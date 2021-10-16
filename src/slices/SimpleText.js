@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 const SimpleText = ({ slice }) => {
   console.log(slice)
@@ -13,15 +13,17 @@ const SimpleText = ({ slice }) => {
 
 export default SimpleText
 
-export const query = graphql`
-  fragment ArticleDataBodySimpleText on PrismicArticleDataBodySimpleText {
-    primary {
-      text_body {
-        text
-      }
-      text_heading {
-        text
-      }
-    }
-  }
-`
+// simplify query in useArticleData to use fragments in slice components
+
+// export const query = graphql`
+//   fragment ArticleDataBodySimpleText on PrismicArticleDataBodySimpleText {
+//     primary {
+//       text_body {
+//         text
+//       }
+//       text_heading {
+//         text
+//       }
+//     }
+//   }
+// `
