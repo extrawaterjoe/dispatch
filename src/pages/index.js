@@ -5,7 +5,9 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
 
-const StyledArticleIndex = styled.article``
+const StyledArticleIndex = styled.article`
+  margin: 10px 0;
+`
 
 const Home = () => {
   const { dataNodes } = useArticleData()
