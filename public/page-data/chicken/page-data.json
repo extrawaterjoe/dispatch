@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-prismic-article-url-js",
+    "path": "/chicken/",
+    "result": {"data":{"prismicArticle":{"data":{"body":[{"id":"d769525e-7eda-5fb7-af10-651bc6b1c6cc","slice_type":"iframe_embed_code","primary":{"embed_code":{"text":"<iframe style=\"border: 0; width: 350px; height: 470px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=4263214106/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/\" seamless><a href=\"https://aarondilloway.bandcamp.com/album/chicken-traces\">Chicken Traces by Aaron Dilloway</a></iframe>"}}}],"document_display_name":{"text":"chicken"}},"_previewable":"YWdNUxQAACEAteNO"}},"pageContext":{"id":"1dc56b8c-e675-52c9-828b-f8d577e8fa30","url":"/chicken","__params":{"url":"chicken"}}},
+    "staticQueryHashes": ["63159454","947505608"]}
