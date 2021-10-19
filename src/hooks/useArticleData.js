@@ -23,7 +23,9 @@ export const useArticleData = () => {
                 primary {
                   image {
                     alt
-                    url
+                    fluid(maxWidth: 720) {
+                      src
+                    }
                   }
                   optional_caption {
                     text

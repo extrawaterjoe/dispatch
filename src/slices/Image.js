@@ -3,9 +3,11 @@ import React from "react"
 
 const Image = ({ slice }) => {
   return (
-    <section>
-      <img src={slice.primary.image.url} alt={slice.primary.image.alt} />
-    </section>
+    <img
+      src={slice.primary.image.fluid.src}
+      alt={slice.primary.image.alt}
+      width={"100%"}
+    />
   )
 }
 

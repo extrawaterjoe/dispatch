@@ -5,8 +5,15 @@ import { GlobalStyles } from "../styles/Global"
 import Header from "./Header"
 import PropTypes from "prop-types"
 
-const MainContainer = styled.main`
+const SiteContainer = styled.div`
+  height: 100%;
+  width: 100%;
   max-width: 720px;
+`
+
+const MainContainer = styled.main`
+  margin: 10px;
+  padding-bottom: 80px;
 `
 
 const Layout = ({ children }) => {
@@ -23,8 +30,10 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyles />
-      <Header toggleTheme={toggleTheme} />
-      <MainContainer>{children}</MainContainer>
+      <SiteContainer>
+        <Header toggleTheme={toggleTheme} />
+        <MainContainer>{children}</MainContainer>
+      </SiteContainer>
     </React.Fragment>
   )
 }

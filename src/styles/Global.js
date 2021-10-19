@@ -14,6 +14,5 @@ export const GlobalStyles = createGlobalStyle`
     background-color: var(--background-color);
     color: var(--text-primary);
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    margin: 0 100px;
   }
 `

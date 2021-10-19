@@ -1,13 +1,15 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews"
 import { linkResolver } from "../utils/linkResolver"
-import styled from "styled-components"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
 
-const StyledArticle = styled.article``
+const StyledArticle = styled.article`
+  position: relative;
+`
 
 const ArticleTemplate = ({ data }) => {
   if (!data) return
@@ -50,7 +52,9 @@ export const query = graphql`
             primary {
               image {
                 alt
-                url
+                fluid(maxWidth: 720) {
+                  src
+                }
               }
               optional_caption {
                 text
