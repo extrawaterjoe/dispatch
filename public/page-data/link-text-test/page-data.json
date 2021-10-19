@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-prismic-article-url-js",
-    "path": "/link-text-test/",
-    "result": {"data":{"prismicArticle":{"data":{"body":[{"id":"426b78b5-a7a6-5cd0-973d-ae72dcbb3421","slice_type":"link","primary":{"url":{"url":"https://twitter.com/extrawaterjo"},"link_text":{"text":"link text test"}}}],"document_display_name":{"text":""}},"_previewable":"YW4dEBQAACAA0-mp"}},"pageContext":{"id":"82c12772-ab30-5768-b920-e19d59760f55","url":"/link-text-test","__params":{"url":"link-text-test"}}},
-    "staticQueryHashes": ["63159454","947505608"]}
