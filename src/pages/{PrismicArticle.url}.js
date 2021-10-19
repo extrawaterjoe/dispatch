@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews"
-import { linkResolver } from "../utils/LinkResolver"
+import { linkResolver } from "../utils/linkResolver"
 import styled from "styled-components"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
