@@ -5,7 +5,7 @@ import { useArticleData } from "../hooks/useArticleData"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
-import { linkResolver } from "../utils/LinkResolver"
+import { linkResolver } from "../utils/linkResolver"
 
 const StyledArticleIndex = styled.article`
   margin: 10px 0;
