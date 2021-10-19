@@ -1,6 +1,8 @@
 import React from "react"
-import styled from "styled-components"
 import { graphql } from "gatsby"
+import { withPrismicPreview } from "gatsby-plugin-prismic-previews"
+import { linkResolver } from "../utils/LinkResolver"
+import styled from "styled-components"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
@@ -21,7 +23,12 @@ const ArticleTemplate = ({ data }) => {
   )
 }
 
-export default ArticleTemplate
+export default withPrismicPreview(ArticleTemplate, [
+  {
+    repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+    linkResolver,
+  },
+])
 
 export const query = graphql`
   query ArticleQuery($id: String) {
@@ -76,6 +83,7 @@ export const query = graphql`
           text
         }
       }
+      _previewable
     }
   }
 `

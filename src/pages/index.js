@@ -1,9 +1,11 @@
 import React from "react"
+import { withPrismicPreview } from "gatsby-plugin-prismic-previews"
 import styled from "styled-components"
 import { useArticleData } from "../hooks/useArticleData"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import SliceZone from "../components/SliceZone"
+import { linkResolver } from "../utils/LinkResolver"
 
 const StyledArticleIndex = styled.article`
   margin: 10px 0;
@@ -26,4 +28,9 @@ const Home = () => {
   )
 }
 
-export default Home
+export default withPrismicPreview(Home, [
+  {
+    repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+    linkResolver,
+  },
+])

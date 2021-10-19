@@ -55,6 +55,7 @@ export const useArticleData = () => {
               text
             }
           }
+          _previewable
         }
       }
     }
