@@ -1,7 +1,8 @@
 import { useStaticQuery, graphql } from "gatsby"
+import { useMergePrismicPreviewData } from "gatsby-plugin-prismic-previews"
 
 export const useHomeData = () => {
-  const data = useStaticQuery(graphql`
+  const staticHomeData = useStaticQuery(graphql`
     query HomeQuery {
       prismicHome {
         data {
@@ -33,6 +34,8 @@ export const useHomeData = () => {
       }
     }
   `)
+
+  const { data, isPreview } = useMergePrismicPreviewData(staticHomeData)
 
   return { data }
 }
