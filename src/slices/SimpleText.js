@@ -4,7 +4,6 @@ import React from "react"
 const SimpleText = ({ slice }) => {
   return (
     <>
-      <div>{slice.primary.text_heading.text}</div>
       <div>{slice.primary.text_body.text}</div>
     </>
   )

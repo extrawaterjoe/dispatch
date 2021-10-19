@@ -57,7 +57,16 @@ export const query = graphql`
               text_body {
                 text
               }
-              text_heading {
+            }
+          }
+          ... on PrismicArticleDataBodyLink {
+            id
+            slice_type
+            primary {
+              url {
+                url
+              }
+              link_text {
                 text
               }
             }

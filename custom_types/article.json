@@ -17,7 +17,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": {},
+        "labels": null,
         "choices": {
           "image": {
             "type": "Slice",
@@ -32,6 +32,13 @@
                   "constraint": {},
                   "thumbnails": [],
                   "label": "image"
+                }
+              },
+              "alt_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "alt_text"
                 }
               },
               "optional_caption": {
@@ -51,17 +58,10 @@
             "icon": "format_color_text",
             "display": "list",
             "non-repeat": {
-              "text_heading": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading1",
-                  "label": "text_heading"
-                }
-              },
               "text_body": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,list-item,o-list-item,rtl",
                   "label": "text_body"
                 }
               }
@@ -80,6 +80,30 @@
                 "config": {
                   "multi": "embed",
                   "label": "embed_code"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "link": {
+            "type": "Slice",
+            "fieldset": "link",
+            "description": "link",
+            "icon": "insert_link",
+            "display": "list",
+            "non-repeat": {
+              "link_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "link_text"
+                }
+              },
+              "url": {
+                "type": "Link",
+                "config": {
+                  "label": "url",
+                  "select": null
                 }
               }
             },
