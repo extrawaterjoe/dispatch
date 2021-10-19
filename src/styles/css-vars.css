@@ -1,3 +1,7 @@
+:root {
+  --container-width: 720px;
+}
+
 body[data-theme="light"] {
   --background-color: #f5f5f5;
   --text-primary: #000080;

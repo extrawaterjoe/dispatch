@@ -1,12 +1,16 @@
 import React from "react"
+import styled from "styled-components"
 // import { graphql } from "gatsby"
+
+const StyledImage = styled.img`
+  width: 100%;
+`
 
 const Image = ({ slice }) => {
   return (
-    <img
+    <StyledImage
       src={slice.primary.image.fluid.src}
       alt={slice.primary.image.alt}
-      width={"100%"}
     />
   )
 }

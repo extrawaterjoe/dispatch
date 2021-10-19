@@ -8,7 +8,7 @@ import SliceZone from "../components/SliceZone"
 import { linkResolver } from "../utils/linkResolver"
 
 const StyledArticleIndex = styled.article`
-  margin: 10px 0;
+  margin: 20px 0px;
 `
 
 const Home = () => {

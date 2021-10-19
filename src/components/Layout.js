@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "../styles/css-vars.css"
 import { useDarkMode } from "../hooks/useDarkMode"
 import { GlobalStyles } from "../styles/Global"
 import Header from "./Header"
@@ -8,7 +9,8 @@ import PropTypes from "prop-types"
 const SiteContainer = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 720px;
+  padding: 30px 0px;
+  max-width: var(--container-width);
 `
 
 const MainContainer = styled.main`

@@ -12,7 +12,9 @@ export const useHomeData = () => {
               primary {
                 home_image {
                   alt
-                  url
+                  fluid(maxWidth: 200) {
+                    src
+                  }
                 }
                 home_name {
                   text
