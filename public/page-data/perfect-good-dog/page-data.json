@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-prismic-article-url-js",
+    "path": "/perfect-good-dog/",
+    "result": {"data":{"prismicArticle":{"data":{"body":[{"id":"c0fc7963-edec-5775-b980-e9c0d3fafce2","slice_type":"image","primary":{"image":{"alt":"me as a dog","url":"https://images.prismic.io/dispatch/09b05656-57c7-4d10-81c8-e80b10509112_original_10d68efc58ca926313bbcd0c365f6d8c.jpeg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50"},"optional_caption":{"text":"the dog is very good and very perfect."}}}],"document_display_name":{"text":"Perfect Good Dog"}},"_previewable":"YWWLBhQAACEArnEl"}},"pageContext":{"id":"8a73677e-505f-5592-b63d-9a04954dcc60","url":"/perfect-good-dog","__params":{"url":"perfect-good-dog"}}},
+    "staticQueryHashes": ["63159454","947505608"]}
