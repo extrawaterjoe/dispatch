@@ -9,7 +9,7 @@ import PropTypes from "prop-types"
 const SiteContainer = styled.div`
   height: 100%;
   width: 100%;
-  padding: 30px 0px;
+  padding: 10px 0px;
   max-width: var(--container-width);
 `
 
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <GlobalStyles />
       <SiteContainer>
-        <Header toggleTheme={toggleTheme} />
+        <Header theme={theme} toggleTheme={toggleTheme} />
         <MainContainer>{children}</MainContainer>
       </SiteContainer>
     </React.Fragment>
