@@ -1,14 +1,12 @@
 import React from "react"
-import HomeInfo from "../slices/HomeInfo"
-import CustomLink from "../slices/CustomLink"
 import Image from "../slices/Image"
 import IframeEmbedCode from "../slices/IframeEmbedCode"
 import SimpleText from "../slices/SimpleText"
 import ArticleLink from "../slices/ArticleLink"
+import CustomLink from "../slices/CustomLink"
 
 const SliceZone = ({ sliceZone }) => {
   const sliceComponents = {
-    home_info: HomeInfo,
     custom_link: CustomLink,
     image: Image,
     iframe_embed_code: IframeEmbedCode,

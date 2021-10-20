@@ -10,15 +10,16 @@ const StyledInfoContainer = styled.div`
   text-align: center;
 `
 
-const HomeImage = ({ slice }) => {
+const HomeImage = ({ props }) => {
   return (
     <>
       <StyledHomeImage
-        src={slice.primary.home_image.fluid.src}
-        alt={slice.primary.home_name.text}
+        src={props.home_image.fluid.src}
+        alt={props.home_name.text}
       />
       <StyledInfoContainer>
-        <h3>{slice.primary.home_name.text}</h3>
+        <h3>{props.home_name.text}</h3>
+        <p>{props.home_description.text}</p>
       </StyledInfoContainer>
     </>
   )

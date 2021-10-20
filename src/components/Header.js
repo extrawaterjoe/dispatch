@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { useHomeData } from "../hooks/useHomeData"
+import HomeInfo from "./HomeInfo"
 import SliceZone from "./SliceZone"
 
 const StyledHeader = styled.div`
@@ -14,6 +15,7 @@ const Header = ({ toggleTheme }) => {
 
   return (
     <StyledHeader>
+      <HomeInfo props={data.prismicHome.data} />
       <SliceZone sliceZone={data.prismicHome.data.body} />
       <button onClick={toggleTheme}>THEME</button>
     </StyledHeader>

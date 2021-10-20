@@ -7,21 +7,6 @@ export const useHomeData = () => {
       prismicHome {
         data {
           body {
-            ... on PrismicHomeDataBodyHomeInfo {
-              id
-              primary {
-                home_image {
-                  alt
-                  fluid(maxWidth: 200) {
-                    src
-                  }
-                }
-                home_name {
-                  text
-                }
-              }
-              slice_type
-            }
             ... on PrismicHomeDataBodyCustomLink {
               id
               slice_type
@@ -31,6 +16,17 @@ export const useHomeData = () => {
                 }
               }
             }
+          }
+          home_description {
+            text
+          }
+          home_image {
+            fluid(maxWidth: 200) {
+              src
+            }
+          }
+          home_name {
+            text
           }
         }
       }
