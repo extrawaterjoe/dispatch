@@ -37,7 +37,7 @@ export const useArticleData = () => {
                 slice_type
                 primary {
                   text_body {
-                    text
+                    html
                   }
                 }
               }

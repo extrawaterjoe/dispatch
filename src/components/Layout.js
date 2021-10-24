@@ -7,10 +7,14 @@ import Header from "./Header"
 import PropTypes from "prop-types"
 
 const SiteContainer = styled.div`
+  @media only screen and (min-width: 350px) {
+    width: calc(100vw - 10px);
+    max-width: var(--container-width);
+  }
+
   height: 100%;
   width: 100%;
   padding: 10px 0px;
-  max-width: var(--container-width);
 `
 
 const MainContainer = styled.main`

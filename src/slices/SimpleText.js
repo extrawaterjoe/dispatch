@@ -1,11 +1,16 @@
 import React from "react"
+import styled from "styled-components"
 // import { graphql } from "gatsby"
+
+const StyledTextContainer = styled.div``
 
 const SimpleText = ({ slice }) => {
   return (
-    <>
-      <div>{slice.primary.text_body.text}</div>
-    </>
+    <StyledTextContainer
+      dangerouslySetInnerHTML={{
+        __html: slice.primary.text_body.html,
+      }}
+    />
   )
 }
 
