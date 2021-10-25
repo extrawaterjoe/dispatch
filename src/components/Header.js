@@ -48,6 +48,13 @@ const ToggleButton = styled.button`
   }
 `
 
+const CustomLinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+`
+
 const Header = ({ theme, toggleTheme }) => {
   const { data } = useHomeData()
 
@@ -63,7 +70,9 @@ const Header = ({ theme, toggleTheme }) => {
         </ToggleButton>
       </SwitchContainer>
       <HomeInfo props={data.prismicHome.data} />
-      <SliceZone sliceZone={data.prismicHome.data.body} />
+      <CustomLinkContainer>
+        <SliceZone sliceZone={data.prismicHome.data.body} />
+      </CustomLinkContainer>
     </StyledHeader>
   )
 }

@@ -35,6 +35,13 @@
             "icon": "insert_link",
             "display": "list",
             "non-repeat": {
+              "link_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "link_text"
+                }
+              },
               "url": {
                 "type": "Link",
                 "config": {

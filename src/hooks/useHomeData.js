@@ -14,6 +14,9 @@ export const useHomeData = () => {
                 url {
                   url
                 }
+                link_text {
+                  text
+                }
               }
             }
           }
