@@ -57,6 +57,7 @@ const CustomLinkContainer = styled.div`
 
 const Header = ({ theme, toggleTheme }) => {
   const { data } = useHomeData()
+  if (!data) return
 
   return (
     <StyledHeader>

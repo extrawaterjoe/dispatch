@@ -7,6 +7,8 @@ const StyledImage = styled.img`
 `
 
 const Image = ({ slice }) => {
+  if (!slice) return
+
   return (
     <StyledImage
       src={slice.primary.image.fluid.src}

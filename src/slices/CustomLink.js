@@ -20,6 +20,8 @@ const CustomLinkButton = styled.a`
 `
 
 const CustomLink = ({ slice }) => {
+  if (!slice) return
+
   return (
     <CustomLinkButton href={slice.primary.url.url} target="_blank">
       {slice.primary.link_text.text}

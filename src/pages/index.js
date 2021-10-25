@@ -13,6 +13,7 @@ const StyledArticleIndex = styled.article`
 
 const Home = () => {
   const { dataNodes } = useArticleData()
+  if (!dataNodes) return
 
   return (
     <Layout>

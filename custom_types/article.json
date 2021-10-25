@@ -17,7 +17,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": null,
+        "labels": {},
         "choices": {
           "image": {
             "type": "Slice",
@@ -61,7 +61,8 @@
               "text_body": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,list-item,o-list-item,rtl",
+                  "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                  "allowTargetBlank": true,
                   "label": "text_body"
                 }
               }

@@ -19,6 +19,8 @@ const LinkButton = styled.a`
 `
 
 const ArticleLink = ({ slice }) => {
+  if (!slice) return
+
   return (
     <LinkButton href={slice.primary.url.url}>
       {slice.primary.link_text.text}

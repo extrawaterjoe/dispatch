@@ -4,7 +4,7 @@ import { useMergePrismicPreviewData } from "gatsby-plugin-prismic-previews"
 export const useArticleData = () => {
   const staticArticleData = useStaticQuery(graphql`
     query myQuery {
-      allPrismicArticle(sort: { fields: first_publication_date, order: DESC }) {
+      allPrismicArticle(sort: { fields: last_publication_date, order: DESC }) {
         nodes {
           data {
             body {

@@ -9,6 +9,8 @@ const StylediFrameContainer = styled.div`
 `
 
 const IframeEmbedCode = ({ slice }) => {
+  if (!slice) return
+
   return (
     <StylediFrameContainer
       dangerouslySetInnerHTML={{

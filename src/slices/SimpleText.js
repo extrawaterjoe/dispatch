@@ -2,7 +2,17 @@ import React from "react"
 import styled from "styled-components"
 // import { graphql } from "gatsby"
 
-const StyledTextContainer = styled.div``
+const StyledTextContainer = styled.div`
+  @media only screen and (max-width: 650px) {
+    margin: 0px 10px;
+  }
+
+  margin: 0px 30px;
+
+  a:visited {
+    color: pink;
+  }
+`
 
 const SimpleText = ({ slice }) => {
   return (
