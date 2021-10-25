@@ -1,4 +1,7 @@
+/* DEFAULT THEME */
+
 :root {
+  /* header and article container max-width */
   --container-width: 720px;
 
   /* Text */
@@ -9,7 +12,7 @@
 
 body[data-theme="light"] {
   --background-color: #f5f5f5;
-  --text-color: #000080;
+  --text-color: #050a30;
 }
 
 body[data-theme="dark"] {

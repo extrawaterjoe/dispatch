@@ -20,11 +20,9 @@ const LinkButton = styled.a`
 
 const ArticleLink = ({ slice }) => {
   return (
-    <>
-      <LinkButton href={slice.primary.url.url}>
-        {slice.primary.link_text.text}
-      </LinkButton>
-    </>
+    <LinkButton href={slice.primary.url.url}>
+      {slice.primary.link_text.text}
+    </LinkButton>
   )
 }
 
