@@ -20,6 +20,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const pathname = window.location.pathname
 
   return (
     <Helmet
@@ -27,7 +28,13 @@ const Seo = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={
+        pathname === "/"
+          ? `${defaultTitle}`
+          : defaultTitle
+          ? `%s | ${defaultTitle}`
+          : null
+      }
       meta={[
         {
           name: `description`,
