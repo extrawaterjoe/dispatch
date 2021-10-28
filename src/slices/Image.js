@@ -3,6 +3,7 @@ import styled from "styled-components"
 // import { graphql } from "gatsby"
 
 const StyledImage = styled.img`
+  margin: 10px 0px;
   width: 100%;
 `
 

@@ -8,6 +8,7 @@ const StyledHomeImage = styled.img`
 
 const StyledInfoContainer = styled.div`
   text-align: center;
+  margin: 0px 10px;
 `
 
 const HomeImage = ({ props }) => {

@@ -18,7 +18,7 @@ const SiteContainer = styled.div`
 `
 
 const MainContainer = styled.main`
-  margin: 10px;
+  margin: 10px 0px;
   padding-bottom: 80px;
 `
 

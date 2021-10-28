@@ -34,13 +34,6 @@
                   "label": "image"
                 }
               },
-              "alt_text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph",
-                  "label": "alt_text"
-                }
-              },
               "optional_caption": {
                 "type": "StructuredText",
                 "config": {

@@ -4,6 +4,7 @@ import "../styles/css-vars.css"
 
 const LinkButton = styled.a`
   border: 2px solid var(--text-color);
+  margin: 10px 0px;
   padding: 10px 20px;
   width: 100%;
   text-align: center;
