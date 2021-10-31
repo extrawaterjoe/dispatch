@@ -23,7 +23,7 @@ const ArticleLink = ({ slice }) => {
   if (!slice) return
 
   return (
-    <LinkButton href={slice.primary.url.url}>
+    <LinkButton href={slice.primary.url.url} target="_blank">
       {slice.primary.link_text.text}
     </LinkButton>
   )
