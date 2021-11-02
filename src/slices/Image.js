@@ -4,8 +4,7 @@ import "../styles/css-vars.css"
 // import { graphql } from "gatsby"
 
 const FigureContainer = styled.figure`
-  margin: 10px 0px;
-  width: 100%;
+  margin: 0 10px;
 `
 
 const OptionalCaption = styled.figcaption`
@@ -20,7 +19,11 @@ const Image = ({ slice }) => {
 
   return (
     <FigureContainer>
-      <img src={slice.primary.image.fluid.src} alt={slice.primary.image.alt} />
+      <img
+        width={"100%"}
+        src={slice.primary.image.fluid.src}
+        alt={slice.primary.image.alt}
+      />
       {slice.primary.optional_caption ? (
         <OptionalCaption>{slice.primary.optional_caption.text}</OptionalCaption>
       ) : (
