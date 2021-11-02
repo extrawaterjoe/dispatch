@@ -6,7 +6,7 @@ const StylediFrameContainer = styled.div`
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 10px 0px;
+  margin: 0px 10px;
 `
 
 const IframeEmbedCode = ({ slice }) => {

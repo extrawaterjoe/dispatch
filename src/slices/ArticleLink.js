@@ -2,9 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import "../styles/css-vars.css"
 
+const LinkContainer = styled.div`
+  margin: 10px;
+`
+
 const LinkButton = styled.a`
   border: 2px solid var(--text-color);
-  margin: 10px 0px;
   padding: 10px 20px;
   width: 100%;
   text-align: center;
@@ -23,9 +26,11 @@ const ArticleLink = ({ slice }) => {
   if (!slice) return
 
   return (
-    <LinkButton href={slice.primary.url.url} target="_blank">
-      {slice.primary.link_text.text}
-    </LinkButton>
+    <LinkContainer>
+      <LinkButton href={slice.primary.url.url} target="_blank">
+        {slice.primary.link_text.text}
+      </LinkButton>
+    </LinkContainer>
   )
 }
 

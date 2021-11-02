@@ -7,7 +7,7 @@ const StyledTextContainer = styled.div`
     margin: 0px 10px;
   }
 
-  margin: 10px 0px;
+  margin: 0px 10px;
 
   a:visited {
     color: pink;

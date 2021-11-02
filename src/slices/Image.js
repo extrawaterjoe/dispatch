@@ -4,7 +4,7 @@ import "../styles/css-vars.css"
 // import { graphql } from "gatsby"
 
 const FigureContainer = styled.figure`
-  margin: 0 10px;
+  margin: 0px 10px;
 `
 
 const OptionalCaption = styled.figcaption`
