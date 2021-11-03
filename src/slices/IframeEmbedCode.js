@@ -10,10 +10,22 @@ const StylediFrameContainer = styled.div`
 `
 
 const IframeEmbedCode = ({ slice }) => {
+  const containerRef = React.useRef()
+
+  React.useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.firstElementChild.setAttribute(
+        "title",
+        "iframe player"
+      )
+    }
+  })
+
   if (!slice) return
 
   return (
     <StylediFrameContainer
+      ref={containerRef}
       dangerouslySetInnerHTML={{
         __html: slice.primary.embed_code.text,
       }}
