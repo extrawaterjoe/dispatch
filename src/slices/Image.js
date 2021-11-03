@@ -15,8 +15,6 @@ const OptionalCaption = styled.figcaption`
 const Image = ({ slice }) => {
   if (!slice) return
 
-  console.log("image:", slice)
-
   return (
     <FigureContainer>
       <img

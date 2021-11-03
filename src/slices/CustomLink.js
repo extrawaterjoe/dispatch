@@ -23,7 +23,11 @@ const CustomLink = ({ slice }) => {
   if (!slice) return
 
   return (
-    <CustomLinkButton href={slice.primary.url.url} target="_blank">
+    <CustomLinkButton
+      href={slice.primary.url.url}
+      target="_blank"
+      rel="noopener"
+    >
       {slice.primary.link_text.text}
     </CustomLinkButton>
   )
