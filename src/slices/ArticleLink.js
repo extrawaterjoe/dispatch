@@ -27,7 +27,7 @@ const ArticleLink = ({ slice }) => {
 
   return (
     <LinkContainer>
-      <LinkButton href={slice.primary.url.url} target="_blank">
+      <LinkButton href={slice.primary.url.url} target="_blank" rel="noopener">
         {slice.primary.link_text.text}
       </LinkButton>
     </LinkContainer>
