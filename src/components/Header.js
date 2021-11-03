@@ -62,7 +62,7 @@ const Header = ({ theme, toggleTheme }) => {
   return (
     <StyledHeader>
       <SwitchContainer>
-        <ToggleButton onClick={toggleTheme} name={"theme toggle"}>
+        <ToggleButton onClick={toggleTheme} name="theme toggle">
           {theme === "light" ? (
             <MoonIcon style={{ fill: "midnightblue" }} />
           ) : (

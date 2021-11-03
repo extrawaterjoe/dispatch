@@ -12,7 +12,7 @@ const StylediFrameContainer = styled.div`
 const IframeEmbedCode = ({ slice }) => {
   const containerRef = React.useRef()
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (containerRef.current) {
       containerRef.current.firstElementChild.setAttribute(
         "title",
