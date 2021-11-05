@@ -52,7 +52,11 @@ export const query = graphql`
             primary {
               image {
                 alt
-                fluid(maxWidth: 720) {
+                fluid(
+                  maxWidth: 720
+                  placeholderImgixParams: { blur: 10 }
+                  imgixParams: { auto: "['format', 'compress']", ar: "1.61" }
+                ) {
                   src
                 }
               }
