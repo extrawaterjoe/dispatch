@@ -30,6 +30,6 @@ body[data-theme="dark"] {
   --text-color: #f5f5f5;
 
   /* Header Link Colors*/
-  --custom-link-bg: #f09a65;
-  --custom-link-hover: #ffcbab;
+  --custom-link-bg: #ff863b;
+  --custom-link-hover: #ffa66e;
 }
