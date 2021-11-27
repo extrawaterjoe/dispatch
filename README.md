@@ -1,3 +1,5 @@
+# Dispatch
+
 dispatch is a simple, responsive, open source link-tree / microblog / zine style website. Built with Gatsby, Prismic, and styled-components, deployed with Netlify for quick setup.
 
 [dispatch web docs](https://j-o-e.notion.site/dispatch-web-docs-1e5013dd3b1e45aa90150be7aba6ce0c)
